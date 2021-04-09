@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Бики та корови</title>
+  </head>
+  <body>
+    <!-- <div id='width'></div> -->
+
+    <div class="loser hidden">
+      <p>
+        You did not guess the correct number,
+        <span class="losing_secret_num"></span>. Would you like to try again
+        with a different number?
+      </p>
+    </div>
+
+    <div class="winning_text hidden">
+      <p>You won using only <span class="winning_secret"></span> guesses!</p>
+    </div>
+
+    <input
+      id="playAgain"
+      class="hidden"
+      type="button"
+      value="Play Again!"
+      onclick="location.reload(true);"
+    />
+
+    <!-- Below is a user input -->
+    <div class="main">
+      <div class="wrapper one">
+        <input
+          type="number"
+          class="guess number"
+          min="4"
+          max="4"
+          placeholder="0000"
+          id="one"
+        />
+
+        <button class="guess-one" onclick="getScore()">Вгадати</button>
+      </div>
+
+      <div class="wrapper two hidden">
+        <input
+          type="number"
+          class="guess number"
+          min="4"
+          max="4"
+          placeholder="0000"
+          id="two"
+        />
+
+        <button class="guess-two" onclick="getScore()">Вгадати</button>
+      </div>
+
+      <div class="wrapper three hidden">
+        <input
+          type="number"
+          class="guess number"
+          min="4"
+          max="4"
+          placeholder="0000"
+          id="three"
+        />
+
+        <button class="guess-three" onclick="getScore()">Вгадати</button>
+      </div>
+
+      <div class="wrapper four hidden">
+        <input
+          type="number"
+          class="guess number"
+          min="4"
+          max="4"
+          placeholder="0000"
+          id="four"
+        />
+
+        <button class="guess-four" onclick="getScore()">Вгадати</button>
+      </div>
+
+      <div class="wrapper five hidden">
+        <input
+          type="number"
+          class="guess number"
+          min="4"
+          max="4"
+          placeholder="0000"
+          id="five"
+        />
+
+        <button class="guess-five" onclick="getScore()">Вгадати</button>
+      </div>
+
+      <div class="wrapper six hidden">
+        <input
+          type="number"
+          class="guess number"
+          min="4"
+          max="4"
+          placeholder="0000"
+          id="six"
+        />
+
+        <button class="guess-six" onclick="getScore()">Вгадати</button>
+      </div>
+
+      <div class="wrapper seven hidden">
+        <input
+          type="number"
+          class="guess number"
+          min="4"
+          max="4"
+          placeholder="0000"
+          id="seven"
+        />
+
+        <button class="guess-seven" onclick="getScore()">Вгадати</button>
+      </div>
+
+      <div class="wrapper eight hidden">
+        <input
+          type="number"
+          class="guess number"
+          min="4"
+          max="4"
+          placeholder="0000"
+          id="eight"
+        />
+
+        <button class="guess-eight" onclick="getScore()">Вгадати</button>
+      </div>
+
+      <div class="wrapper nine hidden">
+        <input
+          type="number"
+          class="guess number"
+          min="4"
+          max="4"
+          placeholder="0000"
+          id="nine"
+        />
+
+        <button class="guess-nine" onclick="getScore()">Вгадати</button>
+      </div>
+
+      <div class="wrapper ten hidden">
+        <input
+          type="number"
+          class="guess number"
+          min="4"
+          max="4"
+          placeholder="0000"
+          id="ten"
+        />
+
+        <button class="guess-ten" onclick="getScore()">Вгадати</button>
+      </div>
+    </div>
+
+    <div class="score"></div>
+
+    <script src="app.js"></script>
+    <!-- <script src="rosetta.js"></script> -->
+  </body>
+</html>
